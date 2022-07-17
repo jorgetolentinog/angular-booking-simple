@@ -1,0 +1,39 @@
+<div class="contenido">
+  <div class="titulo">Iniciar Sesión</div>
+  <div class="section-login">
+    <div class="row">
+      <div class="col-md-6">
+        <form [formGroup]="loginForm">
+          <div class="box-usuario">
+            <label for="">Emal</label>
+            <input
+              class="form-control txt-user"
+              type="text"
+              placeholder="Ingrese su email"
+              formControlName="email"
+            />
+          </div>
+          <div class="box-clave">
+            <label for="">Contraseña</label>
+            <input
+              class="form-control txt-pass"
+              type="password"
+              placeholder="Ingrese su contraseña"
+              formControlName="password"
+            />
+          </div>
+          <div class="box-boton">
+            <button class="btn-login" type="submit" (click)="submit()">
+              <i class="bi bi-box-arrow-in-right"></i> Ingresar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6 col-img">
+        <div class="box-img">
+          <img class="user-img" src="assets/user-icon.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

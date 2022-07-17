@@ -1,0 +1,276 @@
+.app-content {
+  margin-top: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.content-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--theme-primary);
+}
+
+.form-select {
+  width: 500px;
+  border: 1px solid var(--theme-primary);
+}
+
+.form-select:focus {
+  border: 1px solid var(--theme-primary);
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.main-content {
+  width: 100%;
+  padding: 10px;
+  background: var(--theme-tertiary);
+  border: 1px solid var(--theme-primary);
+  border-radius: 4px;
+}
+
+.reserve-option {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-text {
+  color: var(--theme-primary);
+}
+
+.main-booking {
+  margin-top: -10px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--theme-tertiary);
+  border: 1px solid var(--theme-primary);
+}
+
+.table-content {
+  display: flex;
+  border: 1px solid var(--theme-secondary);
+  border-radius: 4px;
+  background: var(--theme-secondary);
+  padding: 20px;
+  width: 65%;
+  flex-wrap: wrap;
+}
+
+.caja {
+  border: 1px solid brown;
+  border-radius: 4px;
+  background: var(--theme-tertiary);
+  color: var(--theme-primary);
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.caja--selected {
+  background: var(--theme-primary);
+  color: var(--theme-secondary);
+  color: #fff;
+}
+
+.reserve-content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--theme-secondary);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.reserve-title {
+  color: var(--theme-tertiary);
+  font-size: 20px;
+}
+
+/*PERSONA*/
+.reserve-person {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin: 10px;
+}
+
+.person-form {
+  display: flex;
+  border: 1px solid var(--theme-primary);
+  border-radius: 4px;
+  background: var(--theme-primary);
+  height: 25px;
+  width: 60px;
+}
+
+.person-form-minus {
+  width: 10px;
+  height: 100%;
+  background: transparent;
+  color: var(--theme-tertiary);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+}
+
+.person-form-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.person-form-plus {
+  width: 10px;
+  height: 100%;
+  border: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: var(--theme-tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+/*FECHA*/
+
+.reserve-date {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin: 10px;
+}
+
+.date-form {
+  display: flex;
+  width: 100px;
+  height: 25px;
+  background: var(--theme-primary);
+  border-radius: 4px;
+}
+
+.date-form-input {
+  width: 100%;
+  height: 100%;
+}
+
+.date-form-input input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--theme-tertiary);
+}
+
+.date-form-input input:focus {
+  outline: none;
+}
+
+/*HORA*/
+
+.reserve-hour {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin: 10px;
+}
+
+.hour-form {
+  display: flex;
+  width: 80px;
+  height: 25px;
+  background: var(--theme-primary);
+  border-radius: 4px;
+}
+
+.hour-from-input {
+  width: 100%;
+  height: 100%;
+}
+
+.hour-from-input input {
+  background: transparent;
+  color: var(--theme-tertiary);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 0;
+}
+
+.hour-from-input input:focus {
+  outline: none;
+}
+
+/*Botón*/
+
+.reserve-submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.submit {
+  width: 130px;
+  border-radius: 4px;
+  height: 30px;
+  background: var(--theme-primary);
+  border: 0;
+}
+
+.submit a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*MIS RESERVAS*/
+
+.view-content {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.view-title {
+  color: var(--theme-primary);
+}
+
+.view-booking {
+  width: 100%;
+}
+
+.table thead th {
+  background-color: #715b50;
+  color: #d1c8a9;
+  text-align: center;
+  font-size: 18px;
+}
+
+.table tbody td {
+  background-color: #d1c8a9;
+  padding: 10px 0px;
+  display: flexbox;
+  text-align: center;
+}

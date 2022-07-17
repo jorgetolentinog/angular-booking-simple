@@ -1,0 +1,34 @@
+.contenido{
+  width: 920px;
+  margin: 0 auto;
+}
+
+.section-locales{
+  margin: 25px 0px;
+  padding: 5px 25px;
+  border: 2px #79432F solid;
+  border-radius: 5px;
+  background-color: #D1C8A9;
+}
+
+.fila-locales{
+  margin: 20px 0px;
+}
+
+.titulo{
+  font-size: 40px;
+  font-weight: bold;
+  color: #715B50;
+}
+
+.nombre-local{
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.local-img{
+  width: 270px;
+  height: 170px;
+  border-radius: 5px;
+}

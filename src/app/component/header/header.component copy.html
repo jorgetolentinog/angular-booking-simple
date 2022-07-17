@@ -1,0 +1,8 @@
+<p>header works!</p>
+
+<div *ngIf="userInfo">
+  <div>{{ userInfo.name }} {{ userInfo.lastname }}</div>
+</div>
+<div *ngIf="!userInfo">
+  <a href="/account/login">login</a>
+</div>

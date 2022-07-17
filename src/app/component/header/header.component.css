@@ -1,0 +1,98 @@
+
+.app-navbar{
+  width: 100%;
+  height: 110px;
+  background: var(--theme-secondary);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--theme-primary);
+}
+
+.app-navbar-content{
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-navbar-logo {
+  width: 140px;
+  height: 95px;
+}
+
+.app-navbar-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.app-navbar-option{
+  width: 600px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.app-navbar-option a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.app-navbar-option ul{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.app-navbar-option li{
+  width: 100%;
+}
+
+.app-navbar-option a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: var(--theme-tertiary);
+}
+
+.app-navbar-option a:hover {
+  background: var(--theme-primary);
+}
+
+.app-navbar-toolbox{
+  width: 150px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.app-navbar-toolbox-option{
+  width: 60px;
+  height: 60px;
+  background: var(--theme-primary);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.app-navbar-toolbox-option a{
+  color: var(--theme-quaternary);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

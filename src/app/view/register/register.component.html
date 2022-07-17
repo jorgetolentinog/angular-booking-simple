@@ -1,0 +1,75 @@
+<div class="contenido">
+  <div class="titulo">Registrar Usuario</div>
+  <div class="section-registro">
+    <form [formGroup]="registerForm">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="subtitulo">Información Personal</div>
+          <div class="box-nombre">
+            <label for="">Nombre*</label>
+            <input
+              class="form-control txt-nombre"
+              type="text"
+              placeholder="Ingrese su nombre completo"
+              formControlName="name"
+            />
+          </div>
+          <div class="box-apellidos">
+            <label for="">Apellidos*</label>
+            <input
+              class="form-control txt-apellidos"
+              type="text"
+              placeholder="Ingrese sus apellidos completos"
+              formControlName="lastname"
+            />
+          </div>
+          <div class="box-direccion">
+            <label for="">Dirección*</label>
+            <input
+              class="form-control txt-direccion"
+              type="text"
+              placeholder="Ingrese su dirección de residencia"
+              formControlName="address"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 col-img">
+          <div class="box-img">
+            <img class="user-img" src="assets/user-icon.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="subtitulo">Información de Inicio de Sesión</div>
+        <div class="col-md-6">
+          <div class="box-correo">
+            <label for="">Correo*</label>
+            <input
+              class="form-control txt-correo"
+              type="email"
+              placeholder="usuario@example.com"
+              formControlName="email"
+            />
+          </div>
+          <div class="lbl-aviso">* Campos Obligatorios</div>
+          <div class="box-boton">
+            <button class="btn-registrar" type="submit" (click)="submit()">
+              <i class="bi bi-person-plus-fill"></i> Registrarme
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box-clave">
+            <label for="">Contraseña*</label>
+            <input
+              class="form-control txt-pass"
+              type="password"
+              placeholder="Ingrese su contraseña"
+              formControlName="password"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

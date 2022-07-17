@@ -1,0 +1,25 @@
+<h1>Admin booking</h1>
+
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Mesa</th>
+    <th>Invitados</th>
+    <th>Fecha</th>
+    <th>Estado</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookings">
+      <td>{{ booking.id }}</td>
+      <td>{{ booking.tableId }}</td>
+      <td>{{ booking.guests }}</td>
+      <td>{{ booking.date | date: "dd-MM-YYYY HH:mm:ss" }}</td>
+      <td>{{ booking.stateId | stateName }}</td>
+      <td>
+        <button (click)="bookingConfirm(booking.id)">Confirmar</button
+        ><button (click)="bookingCancel(booking.id)">Cancelar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,102 @@
+<div class="wrapper">
+  <div class="app-content">
+    <div class="content-title">
+      <div class="content-text">
+        <h1>Reservas</h1>
+      </div>
+      <div class="content-select">
+        <select class="form-select">
+          <option>Seleccione Local</option>
+          <option>Av. Revolución Mz M Lt 27, Villa EL Salvador</option>
+          <option>Ca. Gral. Borgoño cuadra 8, Miraflores 15074</option>
+        </select>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="main-text">
+        <h2>Mesas</h2>
+      </div>
+      <div class="reserve-option">
+        <div class="table-content">
+          <button
+            class="caja"
+            *ngFor="let table of tables"
+            [class.caja--selected]="table.id === tableIdSelected"
+            (click)="tableSelect(table.id)"
+          >
+            {{ table.name }}
+          </button>
+        </div>
+        <form class="reserve-content" [formGroup]="bookingForm">
+          <div class="reserve-person">
+            <div class="reserve-title">Personas:</div>
+            <div class="person-form">
+              <button class="person-form-minus" (click)="removeGuest()">
+                <i class="bi bi-dash"></i>
+              </button>
+              <div class="person-form-input">
+                {{ guests }}
+              </div>
+              <button class="person-form-plus" (click)="addGuest()">
+                <i class="bi bi-plus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="reserve-date">
+            <div class="reserve-title">Fecha:</div>
+            <div class="date-form">
+              <div class="date-form-input">
+                <input type="date" formControlName="date" />
+              </div>
+            </div>
+          </div>
+          <div class="reserve-hour">
+            <div class="reserve-title">Hora:</div>
+            <div class="hour-form">
+              <div class="hour-from-input">
+                <input type="time" formControlName="time" />
+              </div>
+            </div>
+          </div>
+          <div class="reserve-submit">
+            <button class="submit" type="submit" (click)="bookingSubmit()">
+              <div class="reserve-title">Reservar</div>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <div class="view-content">
+    <div class="view-title">
+      <h1>Mis Reservas:</h1>
+    </div>
+    <div class="view-booking">
+      <table class="table">
+        <thead>
+          <th>ID</th>
+          <th>Mesa</th>
+          <th>Invitados</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let booking of bookings">
+            <td>{{ booking.id }}</td>
+            <td>{{ booking.tableId }}</td>
+            <td>{{ booking.guests }}</td>
+            <td>{{ booking.date | date: "dd-MM-YYYY HH:mm:ss" }}</td>
+            <td>{{ booking.stateId | stateName }}</td>
+            <td>
+              <button (click)="bookingCancel(booking.id)">Cancelar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
